@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keahlian - Aulia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="bg-white fixed w-full top-0 left-0 shadow z-50">
+  <div class="container mx-auto flex justify-between items-center px-6 py-4">
+    <!-- Logo -->
+    <a href="index.html" class="text-2xl font-bold text-purple-600">Aulia.</a>
+
+    <!-- Menu Desktop -->
+    <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+      <a href="tentang.html" class="hover:text-purple-600">Tentang Saya</a>
+      <a href="keahlian.html" class="hover:text-purple-600">Keahlian</a>
+      <a href="pendidikan.html" class="hover:text-purple-600">Pendidikan</a>
+      <a href="hobi.html" class="hover:text-purple-600">Hobi & Kegiatan</a>
+      <a href="pencapaian.html" class="hover:text-purple-600">Pencapaian</a>
+    </nav>
+
+    <!-- Hamburger Button -->
+    <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="menu" class="hidden md:hidden flex flex-col bg-white shadow-lg px-6 py-4 space-y-3">
+    <a href="tentang.html" class="hover:text-purple-600">Tentang Saya</a>
+    <a href="keahlian.html" class="hover:text-purple-600">Keahlian</a>
+    <a href="pendidikan.html" class="hover:text-purple-600">Pendidikan</a>
+    <a href="hobi.html" class="hover:text-purple-600">Hobi & Kegiatan</a>
+    <a href="pencapaian.html" class="hover:text-purple-600">Pencapaian</a>
+  </div>
+</header>
+
+<script>
+  // Toggle menu di mobile
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("menu");
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+
+  <!-- Keahlian -->
+  <section class="py-20 bg-gray-50 mt-20">
+    <div class="container mx-auto px-6 lg:px-20 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-purple-700 mb-4">Keahlian</h2>
+      <div class="flex justify-center mb-12">
+        <span class="w-16 h-1 bg-yellow-400 rounded-full"></span>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Hard Skill -->
+        <div class="bg-white shadow-lg rounded-2xl p-8 text-left">
+          <h3 class="text-xl font-bold text-purple-700 mb-4 text-center">Hard Skill</h3>
+          <ul class="space-y-4 text-gray-700">
+            <li>🎨 Desain dengan <b>Canva</b></li>
+            <li>📝 Pengolahan dokumen dengan <b>Microsoft Word</b></li>
+            <li>📊 Pengaturan data dengan <b>Microsoft Excel</b></li>
+          </ul>
+        </div>
+        <!-- Soft Skill -->
+        <div class="bg-white shadow-lg rounded-2xl p-8 text-left">
+          <h3 class="text-xl font-bold text-purple-700 mb-4 text-center">Soft Skill</h3>
+          <ul class="space-y-4 text-gray-700">
+            <li>💡 Mengembangkan <b>konten digital</b></li>
+            <li>🤝 Mampu <b>bekerja dalam tim</b></li>
+            <li>🚀 Semangat <b>belajar & berkembang</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Footer -->
+<footer class="bg-purple-700 text-white mt-16">
+  <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- Kolom 1 -->
+    <div>
+      <h2 class="text-xl font-bold">Aulia.</h2>
+      <p class="mt-3 text-gray-200">
+        Portofolio pribadi tentang saya, keahlian, pendidikan, hobi, dan pencapaian.
+      </p>
+    </div>
+
+    <!-- Kolom 2 -->
+    <div>
+      <h2 class="text-xl font-bold">Navigasi</h2>
+      <ul class="mt-3 space-y-2">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="tentang.html" class="hover:underline">Tentang Saya</a></li>
+        <li><a href="keahlian.html" class="hover:underline">Keahlian</a></li>
+        <li><a href="pendidikan.html" class="hover:underline">Pendidikan</a></li>
+        <li><a href="hobi.html" class="hover:underline">Hobi & Kegiatan</a></li>
+        <li><a href="pencapaian.html" class="hover:underline">Pencapaian</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 3 (Kontak) -->
+    <div>
+      <h2 class="text-xl font-bold">Kontak</h2>
+      <ul class="mt-3 space-y-2 text-gray-200">
+        <li>📍 Singaraja, Bali, Indonesia</li>
+        <li>📧 <a href="https://caturaulia890@gmail.com" class="hover:underline">caturaulia890@gmail.com</a></li>
+        <li>📱 <a href="https://wa.me/082292671072" target="_blank" class="hover:underline">+62 8229-2671-072</a></li>
+        <li>🔗 
+          <a href="https://www.instagram.com/rtnihtyou" target="_blank" class="hover:underline">Instagram</a> | 
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bawah Footer -->
+  <div class="bg-purple-800 text-center py-4">
+    <p class="text-sm">&copy; 2025 Aulia. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
